@@ -6,4 +6,4 @@ echo "Activating feature 'bun'"
 VERSION=${VERSION:-undefined}
 echo "The provided version is: $VERSION"
 
-su -c $_REMOTE_USER 'curl -fsSL https://bun.sh/install | bash'
+su -c 'curl -fsSL https://bun.sh/install | bash' $_REMOTE_USER
