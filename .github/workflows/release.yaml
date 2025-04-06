@@ -1,12 +1,10 @@
 name: "Release dev container features & Generate Documentation"
 on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
   workflow_dispatch:
 
 jobs:
   deploy:
+    if: ${{ github.ref_name == 'master' }}
     permissions:
       contents: write
       pull-requests: write
