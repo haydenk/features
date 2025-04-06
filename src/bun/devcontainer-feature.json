@@ -1,0 +1,16 @@
+{
+    "name": "Bun",
+    "id": "bun",
+    "version": "1.0.0",
+    "description": "Install Bun cli for user",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "",
+            "description": "Select version of Bun to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
