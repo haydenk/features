@@ -5,13 +5,12 @@ on:
     branches: ["master"]
   workflow_dispatch:
 
-permissions:
-  contents: write
-  pull-requests: write
-  packages: write
-
 jobs:
   deploy:
+    permissions:
+      contents: write
+      pull-requests: write
+      packages: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
